@@ -8,4 +8,4 @@ const app = express();
 app.use( "/" , (req,res) => res.send("Olá Mundo") );
 
 // Informo ao Node qual porta ele vai usar
-app.listen( 3000, console.log("Servidor up") );
+app.listen( process.env.PORT || 3000, console.log("Servidor up") );
